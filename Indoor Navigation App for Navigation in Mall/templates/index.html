@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+    <head>
+        <meta charset="utf-8" /> 
+        <title></title>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="../static/js/jquery.maphilight.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script type="text/javascript">
+            $(function () {
+                $(".map").maphilight();  
+            });   
+        </script>
+
+
+    <style>
+
+        body{
+            margin:0
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #3f3131;
+            padding: 10px; 
+            position: sticky; 
+            top: 0; 
+            z-index: 111; 
+            margin-left:auto;
+            margin-right:auto;
+        }
+
+        .guide {
+            font-size: 48px; 
+            text-transform: uppercase;
+            font-family: system-ui;
+            font-weight: bold;
+        }
+
+        #white{
+            color: white;
+        }
+
+        #yellow{
+            color: yellow
+        }
+
+        .reload_parent{
+            padding: 8px;
+            background: aliceblue;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+ 
+        @media only screen and (max-width: 600px)  {
+            .navbar { 
+                padding: 10px !important;
+                background-color: aliceblue;
+            }        
+        }
+    </style>
+    
+ 
+</head>
+    <body>
+
+
+       <div class="navbar">
+            <div class="guide">
+                <span id="white">Select Start Point</span>
+            </div>
+            <div>
+                <div class="reload_parent" onclick="location.reload();">
+                    <i class="fa fa-refresh" style="font-size:73px; color:rgb(26 21 214)"></i>
+                </div>
+            </div>
+       </div>
+
+      
+
+        <img src="../static/images/shopping_mall.jpeg" alt="Workplace" id="mall_image" usemap="#workmap" class="map">
+
+        <map name="workmap">
+            <area id="stair_case_1" shape="rect" data-maphilight='{"strokeColor":"fbfbfb","strokeWidth":5,"fillColor":"040499","fillOpacity":0.7}' coords="19,32,215,128" title="Stair Case 1" href="javascript:void(0)">
+
+            <area id="book_store" shape="rect" data-maphilight='{"strokeColor":"fbfbfb","strokeWidth":5,"fillColor":"040499","fillOpacity":0.7}' coords="19,131,137,221" title="Book Store" href="javascript:void(0)" >
+
+            <area id="t1" shape="rect" data-maphilight='{"strokeColor":"fbfbfb","strokeWidth":5,"fillColor":"040499","fillOpacity":0.7}' coords="218,91,310,191" title="t1" href="javascript:void(0)" >
+
+            <area id="clothing_store" shape="rect" data-maphilight='{"strokeColor":"fbfbfb","strokeWidth":5,"fillColor":"040499","fillOpacity":0.7}' coords="17,217,137,488" title="Clothing Store" href="javascript:void(0)">
+
+            <area id="food_court" shape="rect" data-maphilight='{"strokeColor":"fbfbfb","strokeWidth":5,"fillColor":"040499","fillOpacity":0.7}' coords="20,491,137,997" title="Food Court" href="javascript:void(0)">
+
+            <area id="t2" shape="rect" data-maphilight='{"strokeColor":"fbfbfb","strokeWidth":5,"fillColor":"040499","fillOpacity":0.7}' coords="19,999,137,1089" title="t2" href="javascript:void(0)">
+
+            <area id="stair_case_2" shape="rect" data-maphilight='{"strokeColor":"fbfbfb","strokeWidth":5,"fillColor":"040499","fillOpacity":0.7}' coords="20,1094,224,1183" title="Stair Case 2" href="javascript:void(0)">
+           
+            <area  id="elevator" shape="rect" data-maphilight='{"strokeColor":"fbfbfb","strokeWidth":5,"fillColor":"040499","fillOpacity":0.7}' coords="182,254,213,328" title="Elevator" href="javascript:void(0)">
+
+            <area id="foot_wear"  shape="rect" data-maphilight='{"strokeColor":"fbfbfb","strokeWidth":5,"fillColor":"040499","fillOpacity":0.7}' coords="181,340,363,479" title="Foot Wear" href="javascript:void(0)">
+
+            <area id="electronics_store"  shape="rect" data-maphilight='{"strokeColor":"fbfbfb","strokeWidth":5,"fillColor":"040499","fillOpacity":0.7}' coords="175,527,364,664" title="Electronics Store" href="javascript:void(0)">
+
+            <area  id="gaming_zone" shape="rect" data-maphilight='{"strokeColor":"fbfbfb","strokeWidth":5,"fillColor":"040499","fillOpacity":0.7}' coords="182,708,363,984" title="Gaming Zone" href="javascript:void(0)">
+
+            <area  id="theaters" shape="rect" data-maphilight='{"strokeColor":"fbfbfb","strokeWidth":5,"fillColor":"040499","fillOpacity":0.7}' coords="280,1056,491,1183" title="Theaters" href="javascript:void(0)">
+
+            <area  id="passenger_elevator" shape="rect" data-maphilight='{"strokeColor":"fbfbfb","strokeWidth":5,"fillColor":"040499","fillOpacity":0.7}' coords="493,1056,541,1135" title="Passenger Elevator" href="javascript:void(0)">
+
+            <area id="cargo_elevator" shape="rect" data-maphilight='{"strokeColor":"fbfbfb","strokeWidth":5,"fillColor":"040499","fillOpacity":0.7}' coords="496,1144,538,1180" title="Cargo Elevator" href="javascript:void(0)">
+
+            <area id="emergency_exit_1"  shape="rect" data-maphilight='{"strokeColor":"fbfbfb","strokeWidth":5,"fillColor":"040499","fillOpacity":0.7}' coords="234,1163,273,1186" title="Emergency Exit 1" href="javascript:void(0)">
+
+            <area id="emergency_exit_2"  shape="rect" data-maphilight='{"strokeColor":"fbfbfb","strokeWidth":5,"fillColor":"040499","fillOpacity":0.7}' coords="548,1165,584,1185" title="Emergency Exit 2" href="javascript:void(0)">
+
+            <area id="rest_area_2"  shape="rect" data-maphilight='{"strokeColor":"fbfbfb","strokeWidth":5,"fillColor":"040499","fillOpacity":0.7}' coords="482,946,629,1006" title="Rest Area 2" href="javascript:void(0)">
+
+            <area id="beauty_salon"  shape="rect" data-maphilight='{"strokeColor":"fbfbfb","strokeWidth":5,"fillColor":"040499","fillOpacity":0.7}' coords="425,830,654,910" title="Beauty Salon" href="javascript:void(0)">
+
+            <area id="jewellery_store"  shape="rect" data-maphilight='{"strokeColor":"fbfbfb","strokeWidth":5,"fillColor":"040499","fillOpacity":0.7}' coords="426,658,650,823" title="Jewellery Store" href="javascript:void(0)">
+
+            <area  id="restaurant" shape="rect" data-maphilight='{"strokeColor":"fbfbfb","strokeWidth":5,"fillColor":"040499","fillOpacity":0.7}' coords="428,450,653,614" title="Restaurant" href="javascript:void(0)">
+
+            <area id="accessories_store"  shape="rect" data-maphilight='{"strokeColor":"fbfbfb","strokeWidth":5,"fillColor":"040499","fillOpacity":0.7}' coords="428,365,653,443" title="Accessories Store" href="javascript:void(0)">
+
+            <area  id="store" shape="rect" data-maphilight='{"strokeColor":"fbfbfb","strokeWidth":5,"fillColor":"040499","fillOpacity":0.7}' coords="316,93,417,235" title="Store" href="javascript:void(0)">
+
+            <area  id="rest_area_1"  shape="rect" data-maphilight='{"strokeColor":"fbfbfb","strokeWidth":5,"fillColor":"040499","fillOpacity":0.7}' coords="479,280,593,319" title="Rest Area 1" href="javascript:void(0)">
+
+            <area  id="cafe_1"  shape="poly" data-maphilight='{"strokeColor":"fbfbfb","strokeWidth":5,"fillColor":"040499","fillOpacity":0.7}' coords="422,158,423,235,564,234,567,159" title="Cafe 1" href="javascript:void(0)">
+
+            <area id="toys_store"  shape="poly" data-maphilight='{"strokeColor":"fbfbfb","strokeWidth":5,"fillColor":"040499","fillOpacity":0.7}' coords="574,159,723,160,722,234,571,236" title="Toys Store" href="javascript:void(0)">
+
+            <area id="cafe_2"  shape="rect" data-maphilight='{"strokeColor":"fbfbfb","strokeWidth":5,"fillColor":"040499","fillOpacity":0.7}' coords="704,368,797,573" title="Cafe 2" href="javascript:void(0)">
+
+            <area  id="home_care" shape="rect" data-maphilight='{"strokeColor":"fbfbfb","strokeWidth":5,"fillColor":"040499","fillOpacity":0.7}' coords="707,576,798,774" title="Home Care" href="javascript:void(0)">
+
+            <area  id="grocery_store" shape="rect" data-maphilight='{"strokeColor":"fbfbfb","strokeWidth":5,"fillColor":"040499","fillOpacity":0.7}' coords="706,778,799,1074" title="Grocery Store" href="javascript:void(0)">
+
+            <area  id="service_counter" shape="poly" data-maphilight='{"strokeColor":"fbfbfb","strokeWidth":5,"fillColor":"040499","fillOpacity":0.7}' coords="628,272,666,273,666,299,695,302,695,330,629,329" title="Service Counter" href="javascript:void(0)">
+
+            <area id="circle_1"  shape="circle" data-maphilight='{"strokeColor":"fbfbfb","strokeWidth":5,"fillColor":"040499","fillOpacity":0.7}' coords="740,193,73" title="Circle 1" href="javascript:void(0)">
+
+            <area id="entrance_circle"  shape="circle" data-maphilight='{"strokeColor":"fbfbfb","strokeWidth":5,"fillColor":"040499","fillOpacity":0.7}' coords="831,301,45" title="Entrance Circle" href="javascript:void(0)">
+ 
+        </map>
+ 
+    </body>
+</html>
